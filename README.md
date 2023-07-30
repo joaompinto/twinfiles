@@ -6,7 +6,12 @@ Command line tool to find and remove duplicate files
 [![PyPi](https://img.shields.io/pypi/v/twinfiles.svg?style=for-the-badge&color=%23007ec6)](https://pypi.python.org/pypi/twinfiles)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge)](https://github.com/ambv/black)
 
-<img src="imgs/use.png">
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/joaompinto/twinfiles/master/imgs/use.png" alt="twinfiles in action" width="100%"/>
+
+</div>
 
 ## Motivation
 

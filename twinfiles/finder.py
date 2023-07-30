@@ -94,6 +94,12 @@ class Finder:
                 os.remove(filename)
         print("Done")
 
+    def list(self):
+        print("Listing duplicated files...")
+        for _, filenames in self.same_content.items():
+            sorted_filenames = sorted(filenames)
+            print(" ".join(sorted_filenames))
+
     @staticmethod
     def calculate_md5sum(file_path):
         md5_hash = hashlib.md5()
