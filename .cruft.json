@@ -1,0 +1,20 @@
+{
+  "template": "https://github.com/joaompinto/PythonCookiecutter.git",
+  "commit": "6b5aa41a13e638bdb12840768bf7cf263f61271b",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "directory_name": "twinfiles",
+      "package_name": "twinfiles",
+      "project_short_description": "Command line tool to find and remove duplicate files",
+      "author_name": "João Pinto",
+      "author_email": "lamego.pinto@gmail.com",
+      "repository_url": "https://github.com/joaompinto/twinfiles",
+      "_copy_without_render": [
+        "*.yaml"
+      ],
+      "_template": "https://github.com/joaompinto/PythonCookiecutter.git"
+    }
+  },
+  "directory": null
+}

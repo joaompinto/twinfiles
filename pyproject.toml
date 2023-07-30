@@ -1,0 +1,19 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools_scm[toml]>=3.4"]
+
+[tool.setuptools_scm]
+write_to = "twinfiles/version.py"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+exclude = ['build']
+ignore_missing_imports = true
+check_untyped_defs = true
+
+[tool.coverage.run]
+omit = [
+    "twinfiles/version.py"
+]

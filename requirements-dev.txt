@@ -1,0 +1,6 @@
+black
+ruff
+pre-commit
+pytest
+setuptools_scm
+wheel
