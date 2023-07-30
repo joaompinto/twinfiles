@@ -3,11 +3,18 @@ import typer
 from .finder import Finder
 
 
-def main(path: str):
+def main(path: str, delete: bool = False):
     finder = Finder(path)
-    finder.get_file_list()
-    finder.find_duplicates()
+    finder.get_file_stats()
+    finder.find_same_size()
+    finder.find_same_content()
+    if delete:
+        finder.delete()
+
+
+def run_main():
+    typer.run(main)
 
 
 if __name__ == "__main__":
-    typer.run(main)
+    run_main()

@@ -1,8 +1,6 @@
 # CHANGELOG.md
 
 
-## 0.0.1 (UNRELEASED)
+## 0.0.1 (30 July 2023)
 
-Improvements:
-
-- Add a new feature
+Initial release
