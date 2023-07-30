@@ -14,17 +14,17 @@ def setup(c):
 
 @task
 def test(c):
-    c.run("python -m pytest -x tests/", pty=True)
+    c.run("python -m pytest -x tests/")
 
 
 @task
 def test_only(c, filter: str):
-    c.run(f"python -m pytest -x -v -s -k {filter}", pty=True)
+    c.run(f"python -m pytest -x -v -s -k {filter}")
 
 
 @task
 def cover(c):
-    c.run("python -m pytest -x --cov-report term-missing --cov=twinfiles tests", pty=True)
+    c.run("python -m pytest -x --cov-report term-missing --cov=twinfiles tests")
 
 
 @task
@@ -33,4 +33,3 @@ def cover_only(c, filter: str):
         f"python -m pytest -x --cov-report term-missing --cov=twinfiles tests -k {filter}",
         pty=True,
     )
-

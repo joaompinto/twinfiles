@@ -1,6 +1,9 @@
 black
-ruff
+invoke
+mypy
 pre-commit
 pytest
+pytest-cov
+ruff
 setuptools_scm
 wheel
