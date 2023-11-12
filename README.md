@@ -27,5 +27,5 @@ pip install twinfiles
 
 ```sh
 # To delete add --delete
-twinfiles ~/OneDrive/Pictures
+twinfiles ~/OneDrive
 ```

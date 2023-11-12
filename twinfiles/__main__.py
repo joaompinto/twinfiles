@@ -1,9 +1,10 @@
 import typer
 
+from pathlib import Path
 from .finder import Finder
 
 
-def main(path: str, delete: bool = False, list: bool = False):
+def main(path: Path, delete: bool = False, list: bool = False):
     if delete and list:
         typer.echo("You can't delete and list at the same time.")
         raise typer.Exit()

@@ -3,6 +3,7 @@ Find duplicated files based on their meta data.
 """
 import hashlib
 import os
+from pathlib import Path
 from collections import defaultdict
 from dataclasses import dataclass, field
 
@@ -20,9 +21,9 @@ class Finder:
 
     def get_file_stats(self):
         total_size = 0
-        self.path = os.path.expanduser(self.path)
+        self.path = Path(self.path).expanduser()
         with Progress(
-            MofNCompleteColumn(), *Progress.get_default_columns(), TimeElapsedColumn()
+            *Progress.get_default_columns(),
         ) as progress:
             task1 = progress.add_task("[cyan]Getting list of files...", total=None)
             for root, _, files in os.walk(self.path):
@@ -104,9 +105,12 @@ class Finder:
     def calculate_md5sum(file_path):
         md5_hash = hashlib.md5()
 
-        with open(file_path, "rb") as file:
-            # Read the file in small chunks to avoid memory issues with large files
-            for chunk in iter(lambda: file.read(4096), b""):
-                md5_hash.update(chunk)
+        try:
+            with open(file_path, "rb") as file:
+                # Read the file in small chunks to avoid memory issues with large files
+                for chunk in iter(lambda: file.read(4096), b""):
+                    md5_hash.update(chunk)
+        except (OSError, PermissionError):
+            return -1
 
         return md5_hash.hexdigest()
