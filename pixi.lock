@@ -158,6 +158,28 @@ package:
   size: 7427765
   timestamp: 1698166937344
 - platform: win-64
+  name: pip
+  version: 23.3.1
+  category: main
+  manager: conda
+  dependencies:
+  - python >=3.7
+  - setuptools
+  - wheel
+  url: https://conda.anaconda.org/conda-forge/noarch/pip-23.3.1-pyhd8ed1ab_0.conda
+  hash:
+    md5: 2400c0b86889f43aa52067161e1fb108
+    sha256: 435829a03e1c6009f013f29bb83de8b876c388820bf8cf69a7baeec25f6a3563
+  build: pyhd8ed1ab_0
+  arch: x86_64
+  subdir: win-64
+  build_number: 0
+  license: MIT
+  license_family: MIT
+  noarch: python
+  size: 1398838
+  timestamp: 1697896918388
+- platform: win-64
   name: python
   version: 3.12.0
   category: main
@@ -188,6 +210,26 @@ package:
   license: Python-2.0
   size: 16140836
   timestamp: 1696321871976
+- platform: win-64
+  name: setuptools
+  version: 68.2.2
+  category: main
+  manager: conda
+  dependencies:
+  - python >=3.7
+  url: https://conda.anaconda.org/conda-forge/noarch/setuptools-68.2.2-pyhd8ed1ab_0.conda
+  hash:
+    md5: fc2166155db840c634a1291a5c35a709
+    sha256: 851901b1f8f2049edb36a675f0c3f9a98e1495ef4eb214761b048c6f696a06f7
+  build: pyhd8ed1ab_0
+  arch: x86_64
+  subdir: win-64
+  build_number: 0
+  license: MIT
+  license_family: MIT
+  noarch: python
+  size: 464399
+  timestamp: 1694548452441
 - platform: win-64
   name: tk
   version: 8.6.13
@@ -307,6 +349,26 @@ package:
   license_family: BSD
   size: 17207
   timestamp: 1688020635322
+- platform: win-64
+  name: wheel
+  version: 0.41.3
+  category: main
+  manager: conda
+  dependencies:
+  - python >=3.7
+  url: https://conda.anaconda.org/conda-forge/noarch/wheel-0.41.3-pyhd8ed1ab_0.conda
+  hash:
+    md5: 3fc026b9c87d091c4b34a6c997324ae8
+    sha256: 84c3b57fba778add2bd47b7cc70e86f746d2c55549ffd2ccb6f3d6bf7c94d21d
+  build: pyhd8ed1ab_0
+  arch: x86_64
+  subdir: win-64
+  build_number: 0
+  license: MIT
+  license_family: MIT
+  noarch: python
+  size: 57901
+  timestamp: 1698670970223
 - platform: win-64
   name: xz
   version: 5.2.6
