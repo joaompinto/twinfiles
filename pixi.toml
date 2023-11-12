@@ -1,0 +1,11 @@
+[project]
+name = "twinfiles"
+version = "0.1.0"
+description = "Add a short description here"
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[tasks]
+
+[dependencies]
+python = "3.12.0.*"
